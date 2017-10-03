@@ -1,0 +1,20 @@
+.add{
+  position: fixed;
+  right: 300px;
+  top: 300px;
+  border: 2px dotted red;
+}
+
+h4{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: lightyellow;
+}
+
+.image{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+

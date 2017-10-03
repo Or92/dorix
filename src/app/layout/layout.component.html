@@ -1,0 +1,12 @@
+<div class="add">
+<input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+<button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+  Upload
+</button>
+</div>
+
+<div class="image" *ngFor="let image of images; let i = index;">
+  <h4 (click)="remove(i, image.name)">REMOVE</h4>
+  <img class="image" src="{{image.src}}">
+</div>
+
