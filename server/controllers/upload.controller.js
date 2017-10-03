@@ -1,10 +1,10 @@
 const uploadService = require('../services/upload.service');
 const imageService = require('../services/image.service');
 
-const filePath = __dirname + 'uploads/' + req.file.filename;
 module.exports = {
   imageUpload: (req, res) => {
-let origName = req.file.originalname;
+    const filePath = __dirname + 'uploads/' + req.file.filename;
+    let origName = req.file.originalname;
 
   let extensions = ['.jpeg', '.jpg', '.png'];
 return uploadService.uploadS3(filePath, origName, extensions)
