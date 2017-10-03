@@ -3,7 +3,7 @@ const imageService = require('../services/image.service');
 
 module.exports = {
   imageUpload: (req, res) => {
-    const filePath = __dirname + 'uploads/' + req.file.filename;
+    const filePath =  'uploads/' + req.file.filename;
     let origName = req.file.originalname;
 
   let extensions = ['.jpeg', '.jpg', '.png'];
